@@ -8,7 +8,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <meta property="og:type" content="website" /><meta property="og:site_name" content="Gusto UK" /><meta property="og:title" content="Gusto UK — Built for the decisive moment" /><meta property="og:description" content="Race-focused carbon bicycles engineered to move the rider forward." /><meta property="og:url" content="https://flyingat50.github.io/gusto/" /><meta property="og:image" content="https://flyingat50.github.io/gusto/assets/social-share.png" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:image" content="https://flyingat50.github.io/gusto/assets/social-share.png" />
   <link rel="preload" as="image" href="assets/hero-cockpit-front.png" />
-  <link rel="stylesheet" href="styles.css?v=18" />
+  <link rel="stylesheet" href="styles.css?v=22" />
 </head>
 <body>
   <div class="progress" aria-hidden="true"><span></span></div>
@@ -59,9 +59,23 @@
           </div>
           <p class="eyebrow" data-bike-kicker>Race platform</p><h3 data-bike-title>GTR</h3><p class="bike-line" data-bike-line>Immediate by design.</p><p data-bike-copy>A precise road platform for fast group rides, long climbs and the moments when every input matters.</p>
           <div class="bike-specs"><span><small>Terrain</small><b data-bike-terrain>Road / Race</b></span><span><small>Character</small><b data-bike-character>Direct / Fast</b></span></div>
-          <a class="button button-outline" href="dealers.html">Find your build <span>↗</span></a>
+          <div class="bike-actions"><a class="button button-light" href="#bike-specifications">View specifications <span>↓</span></a><a class="text-link" href="dealers.html">Find your build</a></div>
         </div>
       </div>
+      <section class="technical-specs" id="bike-specifications" aria-labelledby="specs-title" data-bike-specifications>
+        <div class="technical-specs-head">
+          <div><p class="eyebrow" data-spec-series>GTR series / Technical detail</p><h3 class="display" id="specs-title"><span data-spec-title>GTR</span><br><em>at a glance.</em></h3></div>
+          <p data-spec-intro>Race-focused carbon engineering with three electronic build levels.</p>
+        </div>
+        <div class="spec-builds" data-spec-builds aria-label="Available builds"></div>
+        <div class="spec-editorial">
+          <div><p class="eyebrow">Specification</p><h4>Details that<br><em>earn their place.</em></h4></div>
+          <div class="spec-list" data-spec-list></div>
+        </div>
+        <div class="geometry-head"><div><p class="eyebrow">Geometry</p><h4 data-geometry-title>Measured for the road.</h4></div><p data-geometry-note>Measurements in millimetres unless specified.</p></div>
+        <div class="geometry-table-wrap" tabindex="0" aria-label="Scrollable bike geometry table"><table class="geometry-table" data-geometry-table></table></div>
+        <p class="geometry-help">Scroll horizontally to compare every size.</p>
+      </section>
     </section>
 
     <section class="technology" id="technology" aria-labelledby="tech-title">
@@ -80,6 +94,6 @@
     </section>
   </main>
   <footer class="site-footer theme-dark"><a class="footer-brand" href="index.html" aria-label="Gusto UK home"><img src="assets/gusto-logo-white.png" alt="Gusto" /></a><div><p>Engineered for the next move.</p><p class="small">Gusto Bikes / United Kingdom</p></div><nav aria-label="Footer"><a href="#bikes">Bikes</a><a href="#technology">Technology</a><a href="engineering.html">Engineering</a><a href="about.html">Our story</a><a href="recur.html">Recur</a><a href="dealers.html">Dealers</a></nav><p class="small">© <span data-year></span> Gusto UK</p></footer>
-  <script src="script.js?v=10"></script>
+  <script src="bike-specs.js?v=1"></script><script src="script.js?v=11"></script>
 </body>
 </html>
