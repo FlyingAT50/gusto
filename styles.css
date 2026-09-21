@@ -200,7 +200,10 @@
 .interest-consent{flex-direction:row!important;align-items:flex-start;gap:12px!important;text-transform:none!important;letter-spacing:0!important;font:13px/1.45 var(--sans)!important;max-width:610px}
 .interest-consent input{width:18px;height:18px;flex:0 0 18px;margin:1px 0 0;accent-color:var(--ink)}
 .interest-form .button{width:max-content;border:0;cursor:pointer}
+.interest-form .button:disabled{cursor:wait;opacity:.72}
 .interest-status{min-height:20px;margin:0;font:10px var(--mono);text-transform:uppercase;letter-spacing:.08em}
+.interest-status.is-success{border-left:3px solid var(--ink);padding-left:12px}
+.interest-status.is-error{border-left:3px solid #c52626;padding-left:12px}
 
 @media(max-width:900px){
   .dealer-hero{grid-template-columns:1fr;padding-top:66px}
