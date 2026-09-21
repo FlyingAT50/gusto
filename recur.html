@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore Recur, an independent bicycle ownership and upgrade service available through participating Gusto dealers." />
+  <title>Recur — Gusto UK</title>
+  <link rel="preload" as="image" href="assets/hero-cockpit-front.png" />
+  <link rel="stylesheet" href="styles.css?v=12" />
+</head>
+<body class="recur-page">
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <header class="site-header" data-header>
+    <a class="brand" href="index.html" aria-label="Gusto UK home"><img src="assets/gusto-logo-white.png" alt="Gusto" /></a>
+    <nav class="desktop-nav" aria-label="Primary navigation"><a href="index.html#bikes">Bikes</a><a href="index.html#technology">Technology</a><a href="engineering.html">Engineering</a><a href="about.html">Our story</a><a class="active" href="recur.html">Recur</a><a href="dealers.html">Find a dealer</a></nav>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu"><span>Menu</span><i></i><i></i></button>
+  </header>
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true"><nav><a href="index.html#bikes">Bikes</a><a href="index.html#technology">Technology</a><a href="engineering.html">Engineering</a><a href="about.html">Our story</a><a href="recur.html">Recur</a><a href="dealers.html">Find a dealer</a></nav><p>Gusto Bikes / United Kingdom</p></div>
+
+  <main>
+    <section class="recur-hero theme-dark" aria-labelledby="recur-title">
+      <div class="recur-hero-copy">
+        <p class="eyebrow">Independent service / Recur</p>
+        <h1 id="recur-title">Ride now.<br>Choose what<br><em>comes next.</em></h1>
+        <p>A flexible route to a Gusto bicycle: make monthly payments over 24 months, then explore the options to keep, return or renew under your individual Recur agreement.</p>
+        <a class="text-link" href="#how-it-works">How it works</a>
+      </div>
+      <div class="recur-hero-media"><img src="assets/hero-cockpit-front.png" alt="Gusto integrated cockpit viewed from above" /></div>
+      <div class="hero-index"><span>24 month illustration</span><span>Ride / Return / Renew</span></div>
+    </section>
+
+    <section class="recur-process section-pad" id="how-it-works" aria-labelledby="recur-process-title">
+      <div class="recur-process-intro"><p class="eyebrow reveal">A dealer-led service</p><h2 class="display reveal" id="recur-process-title">Choose now.<br><em>Decide later.</em></h2><p class="reveal">Your participating dealer supports selection, setup and ongoing care. Eligibility, approval and final options are governed by Recur’s current agreement terms.</p></div>
+      <div class="recur-steps">
+        <article class="reveal"><span>01</span><h3>Choose your Gusto</h3><p>Select an eligible bicycle through a participating dealer. They will explain the plan, application and deposit or contribution.</p></article>
+        <article class="reveal"><span>02</span><h3>Ride and maintain</h3><p>Ride for the agreed term and follow the servicing and condition requirements set out in your agreement.</p></article>
+        <article class="reveal"><span>03</span><h3>Choose the next move</h3><p>At the end of the term, available options may include keeping, returning or renewing your bicycle.</p></article>
+      </div>
+    </section>
+
+    <section class="recur-calculator theme-bone" id="calculator" aria-labelledby="calculator-title">
+      <div class="recur-calc-entry section-pad">
+        <p class="eyebrow">Illustrative calculator</p>
+        <h2 class="display" id="calculator-title">See the shape<br>of the plan.</h2>
+        <p class="calc-lead">Adjust the figures to see a simple 24-month illustration. This is not a quotation or credit offer.</p>
+        <div class="calc-fields">
+          <label><span>Next-bike price</span><span class="money-field">£<input type="number" min="0" step="50" value="3850" data-recur-price /></span></label>
+          <label><span>Deposit / contribution</span><span class="money-field">£<input type="number" min="0" step="50" value="500" data-recur-deposit /></span></label>
+        </div>
+        <p class="calc-caveat">Any existing-bike contribution is subject to inspection, condition, service history and dealer confirmation.</p>
+      </div>
+      <div class="recur-calc-result theme-dark" aria-live="polite">
+        <p class="eyebrow">Your illustration</p>
+        <span class="result-label">Estimated monthly payment</span>
+        <div class="monthly"><strong data-recur-monthly>£67</strong><span>/ month</span></div>
+        <div class="calc-breakdown"><span>Bike price <b data-recur-price-output>£3,850</b></span><span>Contribution <b data-recur-deposit-output>£500</b></span><span>Illustrative future value <b data-recur-future>£1,733</b></span><span>Amount across 24 months <b data-recur-financed>£1,617</b></span></div>
+        <p class="legal">Calculated as (bike price − contribution − illustrative future value) ÷ 24, rounded to the nearest pound. Future value is illustrated at 45% of bike price and is not guaranteed. Actual terms, eligibility and payments may differ.</p>
+      </div>
+    </section>
+
+    <section class="recur-next theme-signal section-pad"><p class="eyebrow reveal">Start with your dealer</p><h2 class="display reveal">The next ride starts<br>with a conversation.</h2><p class="reveal">Ask a participating Gusto dealer to explain availability, servicing requirements and the full agreement before proceeding.</p><a class="button button-dark reveal" href="dealers.html"><span>Find a dealer</span><span>↗</span></a></section>
+  </main>
+
+  <footer class="site-footer theme-dark"><a class="footer-brand" href="index.html" aria-label="Gusto UK home"><img src="assets/gusto-logo-white.png" alt="Gusto" /></a><div><p>Engineered for the next move.</p><p class="small">Gusto Bikes / United Kingdom</p></div><nav aria-label="Footer"><a href="index.html#bikes">Bikes</a><a href="index.html#technology">Technology</a><a href="engineering.html">Engineering</a><a href="about.html">Our story</a><a href="recur.html">Recur</a><a href="dealers.html">Dealers</a></nav><p class="small">© <span data-year></span> Gusto UK</p></footer>
+  <script src="script.js?v=12"></script>
+</body>
+</html>
