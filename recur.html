@@ -6,7 +6,7 @@
   <meta name="description" content="Explore Recur, an independent bicycle ownership and upgrade service available through participating Gusto dealers." />
   <title>Recur — Gusto UK</title>
   <link rel="preload" as="image" href="assets/hero-cockpit-front.png" />
-  <link rel="stylesheet" href="styles.css?v=12" />
+  <link rel="stylesheet" href="styles.css?v=13" />
 </head>
 <body class="recur-page">
   <div class="progress" aria-hidden="true"><span></span></div>
@@ -44,8 +44,8 @@
         <h2 class="display" id="calculator-title">See the shape<br>of the plan.</h2>
         <p class="calc-lead">Adjust the figures to see a simple 24-month illustration. This is not a quotation or credit offer.</p>
         <div class="calc-fields">
-          <label><span>Next-bike price</span><span class="money-field">£<input type="number" min="0" step="50" value="3850" data-recur-price /></span></label>
-          <label><span>Deposit / contribution</span><span class="money-field">£<input type="number" min="0" step="50" value="500" data-recur-deposit /></span></label>
+          <label><span class="field-label">Next-bike price <small>Enter amount</small></span><span class="money-field"><b>£</b><input type="number" min="0" step="50" value="3850" inputmode="numeric" aria-label="Enter next-bike price in pounds" data-recur-price /><i>Edit</i></span></label>
+          <label><span class="field-label">Deposit / contribution <small>Enter amount</small></span><span class="money-field"><b>£</b><input type="number" min="0" step="50" value="500" inputmode="numeric" aria-label="Enter deposit or contribution in pounds" data-recur-deposit /><i>Edit</i></span></label>
         </div>
         <p class="calc-caveat">Any existing-bike contribution is subject to inspection, condition, service history and dealer confirmation.</p>
       </div>

@@ -167,8 +167,14 @@
 .calc-lead{max-width:580px;font-size:18px;margin:35px 0 52px;color:#555}
 .calc-fields{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 .calc-fields label{display:flex;flex-direction:column;gap:10px;font:10px var(--mono);text-transform:uppercase;letter-spacing:.08em}
-.money-field{display:flex;align-items:center;border-bottom:1px solid #777;font:400 clamp(28px,3vw,48px) var(--sans);padding:8px 0}
-.money-field input{width:100%;background:transparent;border:0;outline:0;font:inherit;color:inherit;padding-left:8px}
+.field-label{display:flex;justify-content:space-between;align-items:center;gap:15px}
+.field-label small{font:8px var(--mono);letter-spacing:.1em;color:#666;border:1px solid #aaa;padding:5px 7px}
+.money-field{display:flex;align-items:center;position:relative;border:1px solid #aaa;background:rgba(255,255,255,.52);font:400 clamp(28px,3vw,48px) var(--sans);padding:15px 18px;transition:border-color .2s,box-shadow .2s,background .2s;cursor:text}
+.money-field:hover{border-color:#555;background:rgba(255,255,255,.78)}
+.money-field:focus-within{border-color:var(--ink);background:#fff;box-shadow:0 0 0 3px var(--signal)}
+.money-field b{font-weight:400}
+.money-field input{width:100%;min-width:0;background:transparent;border:0;outline:0;font:inherit;color:inherit;padding:0 62px 0 8px;cursor:text}
+.money-field i{position:absolute;right:16px;bottom:14px;font:8px var(--mono);font-style:normal;letter-spacing:.12em;color:#666}
 .calc-caveat,.legal{font-size:12px;color:#73736d;margin-top:34px;max-width:620px}
 .recur-calc-result{padding:clamp(90px,11vw,180px) var(--pad);display:flex;flex-direction:column;justify-content:center}
 .result-label{font-size:16px;color:#aaa}
