@@ -239,3 +239,6 @@
   .interest-form label,.interest-email,.interest-consent,.interest-form .button,.interest-status{grid-column:1}
   .interest-form .button{width:100%;margin-top:5px}
 }
+
+/* Calmer brand accent */
+:root{--signal:#b7c4a0}
