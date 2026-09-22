@@ -26,4 +26,4 @@ function renderBikeSpecifications(key){
   root.querySelector('[data-spec-list]').innerHTML=data.specs.map(([label,value],index)=>`<article><span>${String(index+1).padStart(2,'0')}</span><div><h5>${label}</h5><p>${value}</p></div></article>`).join('');
   root.querySelector('[data-geometry-table]').innerHTML=`<thead><tr><th>Dimension</th>${data.sizes.map(size=>`<th>${size}</th>`).join('')}</tr></thead><tbody>${data.geometry.map(row=>`<tr>${row.map((cell,index)=>`<${index?'td':'th'}>${cell}</${index?'td':'th'}>`).join('')}</tr>`).join('')}</tbody>`;
 }
-document.addEventListener('DOMContentLoaded',()=>renderBikeSpecifications('gtr'));
+document.addEventListener('DOMContentLoaded',()=>{const root=document.querySelector('[data-bike-specifications]');if(root)renderBikeSpecifications(root.dataset.bikeSpecifications||'gtr')});
