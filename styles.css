@@ -150,6 +150,7 @@
 .recur-hero{min-height:100svh;position:relative;display:flex;align-items:center;overflow:hidden;padding-top:78px}
 .recur-hero-copy{width:min(760px,52vw);padding:clamp(120px,12vw,190px) var(--pad);position:relative;z-index:3}
 .recur-hero-copy h1{font-size:clamp(64px,7.2vw,120px);font-weight:400;line-height:.82;letter-spacing:-.075em;margin:0 0 38px}
+.recur-hero-copy h1 span,.recur-hero-copy h1 em{display:block;white-space:nowrap}
 .recur-hero-copy>p:not(.eyebrow){max-width:590px;color:#aaa;font-size:clamp(17px,1.25vw,20px);margin:0 0 40px}
 .recur-hero-media{position:absolute;inset:0;overflow:hidden;background:#070708}
 .recur-hero-media:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0b0c0c 0%,rgba(11,12,12,.96) 23%,rgba(11,12,12,.58) 46%,rgba(11,12,12,.08) 72%),linear-gradient(0deg,rgba(11,12,12,.36),transparent 42%)}
